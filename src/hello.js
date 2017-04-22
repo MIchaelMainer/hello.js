@@ -303,7 +303,7 @@ hello.utils.extend(hello, {
 		scope = utils.unique(scope).filter(filterEmpty);
 
 		// Save the the scopes to the state with the names that they were requested with.
-		p.qs.state.scope = scope.join(',');
+		p.qs.state.scope = '';
 
 		// Map scopes to the providers naming convention
 		scope = scope.map(function(item) {
