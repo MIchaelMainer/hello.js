@@ -1,4 +1,4 @@
-/*! hellojs v1.14.3 | (c) 2012-2017 Andrew Dodson | MIT https://adodson.com/hello.js/LICENSE */
+/*! hellojs v1.14.4 | (c) 2012-2017 Andrew Dodson | MIT https://adodson.com/hello.js/LICENSE */
 // ES5 Object.create
 if (!Object.create) {
 
@@ -498,7 +498,7 @@ hello.utils.extend(hello, {
 		// Page URL
 		if (opts.display === 'page' && opts.page_uri) {
 			// Add a page location, place to endup after session has authenticated
-			p.qs.state.page_uri = utils.url(opts.page_uri).href;
+			// p.qs.state.page_uri = utils.url(opts.page_uri).href;
 		}
 
 		// Bespoke

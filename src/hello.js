@@ -345,7 +345,7 @@ hello.utils.extend(hello, {
 		// Page URL
 		if (opts.display === 'page' && opts.page_uri) {
 			// Add a page location, place to endup after session has authenticated
-			p.qs.state.page_uri = utils.url(opts.page_uri).href;
+			// p.qs.state.page_uri = utils.url(opts.page_uri).href;
 		}
 
 		// Bespoke
