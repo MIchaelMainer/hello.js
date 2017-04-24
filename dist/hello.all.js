@@ -1,4 +1,4 @@
-/*! hellojs v1.14.4 | (c) 2012-2017 Andrew Dodson | MIT https://adodson.com/hello.js/LICENSE */
+/*! hellojs v1.14.5 | (c) 2012-2017 Andrew Dodson | MIT https://adodson.com/hello.js/LICENSE */
 // ES5 Object.create
 if (!Object.create) {
 
@@ -424,6 +424,7 @@ hello.utils.extend(hello, {
 		});
 
 		// Get current session for merging scopes, and for quick auth response
+		debugger;
 		var session = utils.store(p.network);
 
 		// Scopes (authentication permisions)
@@ -456,7 +457,7 @@ hello.utils.extend(hello, {
 		scope = utils.unique(scope).filter(filterEmpty);
 
 		// Save the the scopes to the state with the names that they were requested with.
-		p.qs.state.scope = '';
+		p.qs.state.scope = scope.join(',');
 
 		// Map scopes to the providers naming convention
 		scope = scope.map(function(item) {
