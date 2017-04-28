@@ -1,4 +1,4 @@
-/*! hellojs v1.14.6 | (c) 2012-2017 Andrew Dodson | MIT https://adodson.com/hello.js/LICENSE */
+/*! hellojs v1.14.7 | (c) 2012-2017 Andrew Dodson | MIT https://adodson.com/hello.js/LICENSE */
 // ES5 Object.create
 if (!Object.create) {
 
@@ -429,6 +429,8 @@ hello.utils.extend(hello, {
 		// Scopes (authentication permisions)
 		// Ensure this is a string - IE has a problem moving Arrays between windows
 		// Append the setup scope
+
+
 		var SCOPE_SPLIT = /[,\s]+/;
 
 		// Include default scope settings (cloned).
@@ -456,7 +458,7 @@ hello.utils.extend(hello, {
 		scope = utils.unique(scope).filter(filterEmpty);
 
 		// Save the the scopes to the state with the names that they were requested with.
-		p.qs.state.scope = scope.join(',');
+		// p.qs.state.scope = scope.join(',');
 
 		// Map scopes to the providers naming convention
 		scope = scope.map(function(item) {
